@@ -2,6 +2,8 @@
 // (En el ejemplo del enunciado el más bajo es -2, ya que -60 no está en el array.)
 "use strict"
 {
+
+    
     let masAltoYMasBajo = ((numeros) => {
         let masAlto = Math.max(...numeros);
         let masBajo = Math.min(...numeros);

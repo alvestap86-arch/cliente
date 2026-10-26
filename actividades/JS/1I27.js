@@ -15,13 +15,23 @@
 {
     let vector = [12, -5, 8, -3, 7, 15, 0, -2, 9, 4];
 
-    let esPrimo = ((numero) => {
+    function esPrimo(numero){
         if (numero < 2) return false;
-        for (let i = 2; i*i <= numero; i++) {
-            if (numero % i === 0) return false;
+        let contador = 0;
+        for (let i = 2; i<numero; i++){
+            if (numero%i===0){
+                contador++;
+            }
         }
-        return true;
-    });
+        if (contador < 1){
+            return true;
+        }
+        return false;
+    };
+
+    console.log("_______");
+    console.log(esPrimo(2));
+    console.log("_______");
 
     let pares = vector.filter(n => n % 2 === 0);
     let impares = vector.filter(n => n % 2 !== 0);

@@ -2,8 +2,8 @@
 "use strict"
 {
     let emailValido = ((texto) => {
-        // [letras, números, punto, guión y guión bajo] @ [letras, números, punto, guión] . [al menos 2 letras]
-        let expresion = /^[\w.-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        // [letras, números, punto, guión y guión bajo] @ [letras, números, punto, guión y guión bajo] . [al menos 2 letras]
+        let expresion = /^[\w.-]+@[\w]+\.[A-Za-z]{2,}$/;
         return expresion.test(texto);
     });
 
